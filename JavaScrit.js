@@ -15,7 +15,7 @@ this.formOnLoad = function(executionContext)
 this.addressStreet3Hide = function (executionContext)
 {
     var formContext = executionContext.getFormContext();
-    if (formContext.getAttribute("address1_line2").getValue == null) {
+    if (formContext.getAttribute("address1_line2").getValue() == null) {
         formContext.getControl("address1_composite_compositionLinkControl_address1_line3").setVisible(false);
     } else {
         formContext.getControl("address1_composite_compositionLinkControl_address1_line3").setVisible(true);
