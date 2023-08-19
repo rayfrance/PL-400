@@ -1,6 +1,9 @@
-this.formOnLoad = function(executionContext){
-    
+this.formOnLoad = function(executionContext)
+{
     var formContext = executionContext.getFormContext();
-    formContext.ui.setFormNotification("Hello World v2", "INFO", "IDUnique12345");
-    formContext.getAttribute("fax").setValue("123-4567");
+    formContext.ui.setFormNotification("Hello World v3", "INFO", "IDUnique12345");
+    if (formContext.getAttribute("fax").getValue() == null) 
+    {
+        formContext.getAttribute("fax").getValue("123-4567");
+    }
 }
