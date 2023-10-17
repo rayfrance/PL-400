@@ -38,4 +38,5 @@ function ButtonPress(primaryControl)
         })
     });
     formContext.getControl("name").setLabel("name");
+
 }
